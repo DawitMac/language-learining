@@ -51,8 +51,22 @@ export const teachers = [
         img : '/teacher5.jpg',
         age : "31"
     },
-    
-    
+    ,
+    {
+        name : "Teacher Henok",
+        img : '/teacher2.jfif',
+        age : "28"
+    },
+    {
+        name : "Teacher Mark",
+        img : '/teacher6.jfif',
+        age : "29"
+    },
+    {
+        name : "Teacher Gerine",
+        img : '/teacher3.jfif',
+        age : "35"
+    } 
 ]
 
 export const pricings = [
@@ -98,4 +112,72 @@ export const questions =[
   "Does the teacher send homework or notes?",
   "If I registered and paid on 09/10, when will the future charge be reduced? How long am I committed to this package?"
 ]
+
+export const user = [
+    { 
+        email : "mekonendawit5@gmail.com",
+        password : "55555"
+    },
+    {
+        email : "tigestugaraneh5@gmail.com",
+        password : "12345"
+    }
+]
+
+export const activities = [ 
+    {
+        data : "Payment received from John Doe of $385.90" ,
+        time : "09:46" ,
+        bColor : '#5D87FF'
+    },
+    {
+        data : "PNew sale recorded #ML-3467" ,
+        time : "09:46" ,
+        bColor : '#49BEFF'
+    },
+    {
+        data : "Payment was made of $64.95 to Michael Anderson" ,
+        time : "09:46" ,
+        bColor : '#13DEB9'
+    },
+    {
+        data : "New sale recorded #ML-3467" ,
+        time : "09:46" ,
+        bColor : '#FFAE1F'
+    },
+    {
+        data : "Project meeting" ,
+        time : "09:46" ,
+        bColor : '#FA896B'
+    },
+    {
+        data : "Payment received from John $385.90" ,
+        time : "09:46" ,
+        bColor : '#539BFF'
+    },
+    {
+        data : "New sale recorded #ML-3467" ,
+        time : "09:46" ,
+        bColor : '#5D87FF'
+    },
+    
+]
+
+ export const chartData = {
+    labels: [
+      'Total',
+      'Completed',
+      'Cancelled'
+    ],
+    datasets: [{
+      label: 'Profit',
+      data: [300, 50, 100],
+      backgroundColor: [
+        '#5D87FF',
+        '#70C274',
+        '#DA0E33'
+      ],
+      hoverOffset: 4
+    }]
+  };
 

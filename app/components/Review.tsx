@@ -3,13 +3,13 @@ import React from 'react'
 
 const Review = () => {
   return (
-    <div className='flex items-center justify-around w-screen h-[90dvh] '>
-        <div className='pl-[40px]'>
-        <Image src="/review1.png" alt="review1" width={300} height={250}   />
-        <Image src="/review2.png" alt="review2" width={300} height={250}  className='mt-[-50px] ml-[-40px]' />
-        <Image src="/review3.png" alt="review3" width={300} height={250} className='mt-[-50px]'  />
+    <div className='flex md:flex-row flex-col items-center justify-around w-screen md:h-[90dvh] md:my-0 my-20 md:gap-0 gap-4'>
+        <div className='pl-[40px] md:mb-0 mb-20'>
+        <Image src="/review1.png" alt="review1" width={300} height={250} className=' w-auto h-auto'   />
+        <Image src="/review2.png" alt="review2" width={300} height={250}  className='mt-[-50px] ml-[-40px]  w-auto h-auto' />
+        <Image src="/review3.png" alt="review3" width={300} height={250} className='mt-[-50px]  w-auto h-auto'  />
         </div>
-        <div className='flex flex-col items-start justify-center text-start w-[40%]'>
+        <div className='flex flex-col items-start justify-center text-start md:w-[40%] w-[80%]'>
             <p className='text-3xl leading-10 mb-6 w-[95%]'>Reviews of people who learned language through our app</p>
             <p className='text-sm leading-2 mb-10'>Lorem ipsum dolor sit amet consectetur. In tellus nec quis diam. Mattis vitae ut molestie cursus. Mauris habitasse sed quisque nunc sed sed. Nec sed adipiscing in molestie.</p>
         </div>

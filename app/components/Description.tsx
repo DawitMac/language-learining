@@ -3,12 +3,12 @@ import React from 'react'
 
 const Description = () => {
   return (
-    <div className='flex items-center justify-around w-screen h-[90dvh]'>
+    <div className='flex flex-col md:flex-row items-center justify-around w-screen md:h-[90dvh] md:my-0 my-16 md:gap-0 gap-4'>
         <div className='flex flex-col items-center justify-center gap-8'>
             <p className='text-2xl font-semibold text-start w-[70%]'>Some good reasons to learn English with us at OLMS:</p>
         <Image src="/iPad.png" alt="hero_image" width={500} height={500}  />
         </div>
-    <div className='flex flex-col items-start justify-center text-start w-[40%]'>
+    <div className='flex flex-col items-start justify-center text-start md:w-[40%] w-[80%]'>
         <p className='text-sm leading-10 mb-2'>Maximum flexibility</p>
         <p className='text-sm leading-2 mb-4'>High availability of classes, all hours of the day, including weekends. Canceling or rescheduling a lesson is possible even on the same day - up to two hours prior to the lesson.</p>
         <p className='text-sm leading-10 mb-2'>Obligation free</p>

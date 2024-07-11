@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar'
 
 const Page = () => {
   return (
-    <>
+    <div className='w-max-screen overflow-hidden'>
     <Navbar />
     <Hero />
     <Teachers />
@@ -21,7 +21,7 @@ const Page = () => {
     <Question />
     <Contact />
     <Footer />
-    </>
+    </div>
   )
 }
 
