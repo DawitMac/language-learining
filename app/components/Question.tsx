@@ -1,6 +1,5 @@
 "use client"
-import { questions } from '@/util/data'
-import Image from 'next/image'
+import { questions } from 'util/data'
 import React from 'react'
 import { motion } from 'framer-motion'
 
@@ -13,7 +12,7 @@ const Question = () => {
         type: "stagger",
         bounce: 0.3,
         duration: 0.4,
-        delay : 0.1 * index 
+        delay : 0.01 * index 
        
     }
     }),

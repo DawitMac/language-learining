@@ -1,12 +1,17 @@
 "use client"
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import AccountType from './AccountType'
-import PersonalInfo from './PersonalInfo'
-import Plan from './Plan'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
+import logo from "../../../public/logo.png"
+import signup from "../../../public/signup.jpg"
+
+import dynamic from 'next/dynamic'
+const AccountType =  dynamic(()=> import('./AccountType')) 
+const PersonalInfo =  dynamic(()=> import('./PersonalInfo'))
+const Plan =  dynamic(()=> import('./Plan'))
+
 
  
 const Page = () => {
@@ -69,10 +74,12 @@ const [ selecctedTab , setSelectedTab ] = useState(registration[0])
 
   return (
 <motion.div initial={{ opacity : 0 }} animate={{ opacity : 1}} exit={{ opacity : 0}} transition={{ duration : 0.3}} className='flex items-center justify-center md:justify-around max-w-screen h-[95dvh]'>
-    <Image src="/signup.jpg" alt="hero_image" width={500} height={500} className='w-[50%] h-screen md:block hidden'  />
+    <Image src={signup} placeholder='blur' alt="hero_image" width={500} height={500} className='w-[50%] h-screen md:block hidden'  />
         <div className='md:w-[45%] w-[80%]'>
         <div className='flex items-center justify-between w-full'>
-  <Image src="/logo.png" alt='logo' width={70} height={70} className='mt-8' />
+          <Link href='/'>
+           <Image src={logo} placeholder='blur' alt='logo' width={70} height={70} className='mt-8' />
+          </Link>
   <Link href='/login'>
   <button className='text-sm p-3 bg-[#5D87FF] text-white hover:scale-105 transition-all duration-300 ease-out rounded-lg mt-8'>Login</button>
   </Link>

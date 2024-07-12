@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { logOut } from '@/lib/action'
+import { logOut } from 'lib/action'
 import Link from 'next/link'
 
 

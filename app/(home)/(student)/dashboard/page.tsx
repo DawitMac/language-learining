@@ -1,10 +1,10 @@
 "use client"
-import { activities, chartData } from '@/util/data'
+import { activities, chartData } from 'util/data'
 import Image from 'next/image'
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import DashboardNav from '@/app/components/DashboardNav'
+import DashboardNav from 'app/components/DashboardNav'
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -13,11 +13,11 @@ const page = () => {
 
 
   return (
-    <div className='flex flex-col items-center justify-start w-screen lg:w-[90dvw] lg:ml-[200px]'>
+    <div className='flex flex-col items-center justify-start w-screen lg:w-[90dvw] lg:ml-[200px] mb-20 lg:mb-0'>
       <DashboardNav />
-      <div className='mt-24 md:mt-0 -z-10 lg:z-0 flex flex-col items-center justify-center w-full gap-y-6'>
+      <div className='mt-24 md:mt-0  lg:z-0 flex flex-col items-center justify-center w-full gap-y-6'>
       <div className='flex flex-col sm:flex-row items-center justify-around w-full sm:w-[90%] gap-8'>
-      <div className='flex items-center justify-around bg-[#EBF3FE] rounded-xl shadow-lg w-[80dvw] sm:w-[60%] px-8 sm:pt-4 py-4'>
+      <div className='flex items-center justify-around bg-[#EBF3FE] rounded-xl shadow-lg w-[80dvw] sm:w-[60%] px-8 sm:pt-4 py-4 lg:py-1'>
         <div className='flex flex-col items-start justify-start gap-3 lg:w-[50%] w-full'>
           <p className='text-lg font-semibold'>Welocome back User! Check dashboard</p>
           <p className='text-sm font-light'>You have 1 upcoming session on Date:</p>

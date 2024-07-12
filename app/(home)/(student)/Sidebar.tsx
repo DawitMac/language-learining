@@ -1,5 +1,5 @@
 "use client"
-import SidebarComponent from '@/app/components/SidebarComponent'
+import SidebarComponent from 'app/components/SidebarComponent'
 import { AnimatePresence , motion } from 'framer-motion'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
@@ -26,7 +26,7 @@ const Sidebar = () => {
                 open ?(
                   <>
                   <AnimatePresence mode="wait">
-                  <motion.div key="background" onClick={()=> setOpen(!open)} animate={{ opacity : 1  }} initial={{ opacity : 0}} exit={{ x : 300 , opacity : 0}} transition={{ duration : 0.5 , ease : "easeInOut"}} className='absolute z-1 w-screen h-screen bg-black/50 block lg:hidden '></motion.div>
+                  <motion.div key="background" onClick={()=> setOpen(!open)} animate={{ opacity : 1  }} initial={{ opacity : 0}} exit={{ x : 300 , opacity : 0}} transition={{ duration : 0.5 , ease : "easeInOut"}} className='fixed z-[6] w-screen h-screen bg-black/50 block lg:hidden '></motion.div>
                   </AnimatePresence>
                   <AnimatePresence mode="wait">
                     <SidebarComponent key="sidebar" open={open} setOpen={setOpen} />

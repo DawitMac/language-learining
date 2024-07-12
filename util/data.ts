@@ -181,3 +181,97 @@ export const activities = [
     }]
   };
 
+  export const invoices = [
+    {
+       id: "INV-1990" , 
+       date : "24 jun 2024" ,
+       price : "$83.74",
+       type : "PDF"
+    },
+    {
+        id: "INV-1991" , 
+        date : "23 jun 2024" ,
+        price : "$97.14",
+        type : "PDF"
+     },
+     {
+        id: "INV-1992" , 
+        date : "22 jun 2024" ,
+        price : "$68.71",
+        type : "PDF"
+     },
+     {
+        id: "INV-1993" , 
+        date : "21 jun 2024" ,
+        price : "$85.21",
+        type : "PDF"
+     },
+     {
+        id: "INV-1994" , 
+        date : "20 jun 2024" ,
+        price : "$52.17",
+        type : "PDF"
+     },
+     {
+        id: "INV-1995" , 
+        date : "19 jun 2024" ,
+        price : "$25.18",
+        type : "PDF"
+     },
+
+  ]
+
+  export const subOverview = [
+     {
+        month : "Jan",
+        day : "9",
+        isActive : false
+     },
+     {
+        month : "Apr",
+        day : "2",
+        isActive : true
+     },
+     {
+        month : "May",
+        day : "7",
+        isActive : false
+     },
+     {
+        month : "Jun",
+        day : "4",
+        isActive : false
+     },
+     {
+        month : "Jul",
+        day : "6",
+        isActive : false
+     },
+     {
+        month : "Jan",
+        day : "8",
+        isActive : false
+     },
+  ]
+
+export const subUpcomming = [
+    {
+        num : 2 ,
+        info : "Subscription renewal alert",
+        time : "10:00-11:30",
+        isActive : false
+    },
+    {
+        num : 8 ,
+        info : "Payment Due",
+        time : "11:00-12:30",
+        isActive : true
+    },
+    {
+        num : 11 ,
+        info : "Subscription upgrade",
+        time : "10:00-11:30",
+        isActive : false
+    },
+]
+

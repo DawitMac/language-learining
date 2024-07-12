@@ -1,7 +1,7 @@
 "use server"
 
 import { z } from "zod"
-import { user } from "@/util/data"
+import { user } from "util/data"
 import { createSession, deleteSession } from "./session";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";

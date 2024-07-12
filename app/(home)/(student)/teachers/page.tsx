@@ -1,11 +1,11 @@
-import DashboardNav from '@/app/components/DashboardNav'
-import { teachers } from '@/util/data'
+import DashboardNav from 'app/components/DashboardNav'
+import { teachers } from 'util/data'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col items-center justify-start w-screen lg:w-[90dvw] lg:ml-[200px]'>
+    <div className='flex flex-col items-center justify-start w-screen lg:w-[90dvw] lg:ml-[200px] mb-20'>
       <DashboardNav />
       <div className='mt-24 md:mt-0 -z-10 lg:z-0 flex items-center justify-around w-full mb-8'>
         <p className='text-xl font-normal'>Find a Teacher</p>

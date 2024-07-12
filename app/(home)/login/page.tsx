@@ -1,14 +1,15 @@
 "use client"
-import React, { useActionState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
 import { Input } from '@/components/ui/input'
-import { login } from '@/lib/action'
+import { login } from 'lib/action'
 import { useFormState, useFormStatus } from 'react-dom'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import ClipLoader from "react-spinners/ClipLoader";
+import logo from "../../../public/logo.png"
 
 const Page = () => {
   let guest = false
@@ -18,13 +19,13 @@ const [ errorMessage , action  ] = useFormState(login, guest)
   return (
     <motion.div initial={{ opacity : 0 }} animate={{ opacity : 1}} exit={{ opacity : 0}} className='w-screen'>
     <div className='flex items-center justify-between px-12 w-full'>
-  <Image src="/logo.png" alt='logo' width={70} height={70} className='mt-4 cursor-pointer  w-auto h-auto' onClick={()=> router.push("/")} />
+  <Image src={logo} alt='logo' width={70} height={70} className='mt-4 cursor-pointer  w-auto h-auto' onClick={()=> router.push("/")} />
   <Link href='/signup'>
   <button className='text-sm p-3 bg-[#5D87FF] text-white hover:scale-105 transition-all duration-300 ease-out rounded-lg'>Signup</button>
   </Link>
   </div>
     <div className='h-[90dvh] flex items-center justify-center w-full' >
-        <form action={action} className='md:w-[40%] w-[80%] flex flex-col items-center justify-center'>
+        <form action={action} className='md:w-[50%] sm:w-[60%] w-[80%] flex flex-col items-center justify-center'>
         <Card className='p-4 w-full'>
   <CardHeader>
     <CardTitle>Sign in to your account</CardTitle>
@@ -62,7 +63,7 @@ const [ errorMessage , action  ] = useFormState(login, guest)
   )
 }
 
-export const CustomButton = ()=>{
+export const CustomButton : React.FC = ()=>{
 
   const { pending} = useFormStatus();
   console.log(pending , "this is the pending status")
