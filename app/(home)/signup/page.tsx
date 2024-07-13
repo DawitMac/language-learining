@@ -6,11 +6,9 @@ import { useRouter } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
 import logo from "../../../public/logo.png"
 import signup from "../../../public/signup.jpg"
-
-import dynamic from 'next/dynamic'
-const AccountType =  dynamic(()=> import('./AccountType')) 
-const PersonalInfo =  dynamic(()=> import('./PersonalInfo'))
-const Plan =  dynamic(()=> import('./Plan'))
+import AccountType from './AccountType'
+import PersonalInfo from './PersonalInfo'
+import Plan from './Plan'
 
 
  

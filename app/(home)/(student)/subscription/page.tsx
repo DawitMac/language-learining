@@ -44,7 +44,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col items-start justify-center gap-16'>
+        <div className='flex flex-col items-start justify-center gap-16 px-6 md:px-0'>
          <div className='flex flex-col gap-6 items-start'>
           <p className='text-xl font-bold'>Current Mont Overview</p>
          <div className='flex items-center justify-center gap-8'>
