@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <div className='relative flex flex-col items-center justify-center w-screen md:h-[70dvw] md:my-0 my-20 md:gap-0 gap-4'>
         <Image src='/shadowBG.png' alt="shadow" width={500} height={500} className='absolute top-0 right-0 z-[-10]' />
-        <p className='text-2xl leading-10 mb-12 font-semibold text-center w-[50%]'>Not sure if OLMS is the right app for you to learn English?</p>
+        <p className='text-2xl leading-10 mb-12 font-semibold text-center w-[50%] -z-10'>Not sure if OLMS is the right app for you to learn English?</p>
         <div className='flex md:flex-row flex-col items-center justify-between md:gap-0 gap-12'>
-        <div className='flex flex-col items-start justify-center text-start md:w-[40%] w-[80%] '>
+        <div className='flex flex-col items-start justify-center text-start md:w-[40%] w-[80%] -z-10'>
             <p className='text-xl leading-10 mb-4 w-[95%] font-bold'>General Inquiries</p>
             <p className='text-sm leading-2 mb-6'>Lorem ipsum dolor sit amet consectetur. Sed volutpat facilisis facilisis sodales convallis in.</p>
             <p className='text-xl mb-4 font-bold'>info@test.com</p>

@@ -2,6 +2,7 @@
 import React ,{ useState} from 'react'
 import { teachers } from 'util/data'
 import Image from 'next/image'
+import { shimmer, toBase64 } from 'util/image_optimizer'
 
 const Teachers = () => {
     const [ min , setMin ] = useState(0)
@@ -32,10 +33,10 @@ const Teachers = () => {
             {
                 teachers.slice(min,max).map((teacher , index)=>(
                     <div key={index} className='flex flex-col gap-2 items-center justify-center '>
-                        <Image src={teacher.img}  alt='teacher-photo' width={150} height={150}/>
+                        <Image src={teacher.img} placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}   alt='teacher-photo' width={150} height={150}/>
                         <p className='text-md font-normal'>{teacher?.name}</p>
                         <p className='text-sm font-light'>{teacher?.age} years old</p>
-                        <button className='text-sm py-2 px-12 bg-[#5D87FF] text-white hover:scale-105 transition-all duration-300 ease-out rounded-lg'>Book now</button>
+                        <button className='sm:text-sm text-[13px] py-2 px-12 bg-[#5D87FF] text-white hover:scale-105 transition-all duration-300 ease-out rounded-lg'>Book now</button>
                     </div>
                 ))
             }

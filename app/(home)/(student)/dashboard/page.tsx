@@ -38,17 +38,17 @@ const page = () => {
          </div>
          <Image src='/message.png' alt='message' width={40} height={40} />
         </div>
-        <div className='flex items-center justify-center gap-2 shadow-lg py-2 px-4  rounded-xl md:mb-0 mb-3'>
+        <div className='flex flex-wrap items-center justify-center gap-2 shadow-lg py-2 sm:px-4   rounded-xl md:mb-0 mb-3 '>
           <div className='flex flex-col item-start justify-start'>
-            <p className='text-sm font-light'>Total Sessions</p>
+            <p className='text-[12px] sm:text-sm font-light'>Total Sessions</p>
             <p className='text-lg font-semibold'>12</p>
           </div>
           <div className='flex flex-col item-start justify-start'>
-            <p className='text-sm font-light'>Total Sessions</p>
+            <p className='text-[12px] sm:text-sm font-light'>Total Sessions</p>
             <p className='text-lg font-semibold'>10</p>
           </div>
           <div className='flex flex-col item-start justify-start'>
-            <p className='text-sm font-light'>Total Sessions</p>
+            <p className='text-[12px] sm:text-sm font-light'>Total Sessions</p>
             <p className='text-lg font-semibold'>2</p>
           </div>
         </div>

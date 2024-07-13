@@ -1,14 +1,20 @@
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import React from 'react'
+import { toBase64 , shimmer } from 'util/image_optimizer'
 
-const Update = () => {
+
+
+const Update = async() => {
+
+
+  
   return (
     <div className='md:mb-0 mb-20'>
         <div className='flex flex-col items-center  gap-y-8 mb-8'>
             <div className='relative'>
-            <Image src="/Rectangle.png" alt="profile" width={100} height={100} className='rounded-full shadow' />
-            <Image src="/camera.png" alt="profile" width={30} height={30} className='absolute -bottom-2 right-3  rounded-full p-1 bg-[#F4F4F5]' />
+            <Image src="/Rectangle.png" placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}  alt="profile" width={100} height={100} className='rounded-full shadow' />
+            <Image src="/camera.png" placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}  alt="profile" width={30} height={30} className='absolute -bottom-2 right-3  rounded-full p-1 bg-[#F4F4F5]' />
             </div>
             <h1 className='text-2xl font-bold'>Jane Doe</h1>
         </div>

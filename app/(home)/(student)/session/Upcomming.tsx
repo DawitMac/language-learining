@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { shimmer, toBase64 } from 'util/image_optimizer'
 
 const data = [
   {
@@ -29,7 +30,7 @@ const Upcomming = () => {
         data.map((session , i)=>(
           <div key={i} className='flex flex-col gap-10 rounded shadow-xl p-3'>
             <div className='flex items-center gap-2'>
-              <Image src={session.img} alt='session_img' width={90} height={90} />
+              <Image src={session.img} placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`} alt='session_img' width={90} height={90} />
               <div className='flex flex-col items-start justify-start gap-1'>
                  <p className='text-md font-semibold'>{session.name}</p>
                  <p className='text-md text-[#28AAE1]'>{session.rating}</p>
